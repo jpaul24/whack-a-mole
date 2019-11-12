@@ -5,7 +5,17 @@ const highScoreBoard = document.querySelector('.high-score');
 let lastHole;
 let timeUp = false;
 let score = 0;
-let highScore = 0;
+let highScore;
+localStorageName = ""
+if(localStorage.getItem(localStorageName) == null) {
+    highScore = 0;
+} else {
+    highScore = localStorage.getItem(localStorageName);
+}
+
+window.onload = function displayHigh() {
+  highScoreBoard.textContent = highScore;
+}
 
 function randomTime(min, max) {
   return Math.round(Math.random() * (max - min) + min);
@@ -44,6 +54,15 @@ function whack(e) {
   score++;
   this.classList.remove('up');
   scoreBoard.textContent = score;
+  highestScore(score);
 }
+
+function highestScore(score) {
+  highScore = Math.max(score, highScore);
+  localStorage.setItem(localStorageName, highScore);
+  highScoreBoard.textContent = highScore;
+}
+
+
 
 pandas.forEach(panda => panda.addEventListener('click', whack))
