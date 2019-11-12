@@ -16,13 +16,13 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 8rem;
+  font-size: 7rem;
   line-height: 1;
   margin-bottom: 1;
 }
 h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: 'Patrick Hand', cursive;
 }
 
@@ -38,7 +38,7 @@ button:hover {
   color: white;
 }
 
-.score {
+.scores {
   background: rgba(255,255,255,0.2);
   padding: 0 3rem;
   line-height: 1;
@@ -47,7 +47,7 @@ button:hover {
 
 .game {
   width: 600px;
-  height: 400px;
+  height: 500px;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
