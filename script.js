@@ -6,7 +6,7 @@ let lastHole;
 let timeUp = false;
 let score = 0;
 let highScore;
-localStorageName = ""
+localStorageName = "joe"
 if(localStorage.getItem(localStorageName) == null) {
     highScore = 0;
 } else {
