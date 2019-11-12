@@ -1,0 +1,39 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  background: #b26a22;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Patrick Hand', cursive;
+}
+
+h1 {
+  text-align: center;
+  font-size: 10rem;
+  line-height: 1;
+  margin-bottom: 0;
+}
+h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Patrick Hand', cursive;
+}
+
+button {
+  background: transparent;
+  border: solid 5px black;
+
+}
+
+button:hover {
+  cursor: pointer;
+  background: black;
+  color: white;
+}
